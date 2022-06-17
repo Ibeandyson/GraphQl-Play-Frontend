@@ -22,7 +22,7 @@ const HomePage: FC = () => {
           <div className="sm: hidden  lg:block">
             <img
               src={Img}
-              style={{ height: "700px", marginTop: "45px", paddingBottom: "20px", width: "1000px" }}
+              style={{ height: "700px", marginTop: "100px", paddingBottom: "20px", width: "1000px" }}
             />
           </div>
           <div className="mt-[100px] sm: pb-10">

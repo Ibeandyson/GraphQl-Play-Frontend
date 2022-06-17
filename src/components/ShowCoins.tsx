@@ -5,7 +5,7 @@ const ShowCoins: FC = () => {
   const { removeCoin, priceData } = useGetPrice();
   return (
     <div>
-      <main className="lg: h-[400px]  lg: overflow-scroll" >
+      <main className="lg: h-[450px]  lg: overflow-scroll" >
         {priceData.map((data: any, index: any) => (
           <div key={index}>
             <div className="flex justify-between pb-7 pt-5">

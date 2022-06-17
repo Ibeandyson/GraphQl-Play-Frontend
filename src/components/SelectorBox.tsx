@@ -4,7 +4,7 @@ import useSetCoin from "../hooks/useSetCoin";
 import useGetPrice from "../hooks/useGetPrice";
 
 const SelectorBox: FC = () => {
-  const { setCoinCode } = useSetCoin();
+  const { setCoinCode, code } = useSetCoin();
   const { setPrice } = useGetPrice();
   return (
     <div className="selector__bg">
@@ -24,6 +24,7 @@ const SelectorBox: FC = () => {
               ))}
             </select>
             <button
+              disabled={code.length < 1 ? true : false}
               onClick={setPrice}
               className="btn bg-[#fd4b23] mt-8 mb-10 w-full max-w-xs  border-0"
             >
