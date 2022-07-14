@@ -1,15 +1,35 @@
 import { gql, } from '@apollo/client';
 
-//GET CYPTO PRICE IN EUR
-export const PRICE_RATES = gql`
-    query price($coinCode:  String!) {
-       markets(filter:{ baseSymbol: {_eq:  $coinCode} quoteSymbol: {_in:"EUR"} marketStatus: { _eq: Active }}) {
-          marketSymbol
+
+export const GET_TRANSACTION = gql`
+    query {
+      allTransactions{
+        id
+        created_at
+        TransactGroups{
           id
-          ticker {
-            lastPrice
-          }
+          name
+          status
+          type
+          date
+          transaction_id
         }
+      } 
       }
     `
+
+
+// export const GET_TRANSACTION_BY_FILTER = gql`
+//   query  TransactGroup($type: String!) {
+//     allTransactGroups(filter:{type: $type}){
+//       id
+//       date
+//       name
+//       status
+//       type
+//     }
+//   }
+// `
+
+
 

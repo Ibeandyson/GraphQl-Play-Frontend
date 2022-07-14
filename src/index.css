@@ -1,22 +1,19 @@
- * {
+* {
   /* height: 100px; */
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
- 
 }
 
-.bg {
+/* .bg {
   background-color: #2a0a4a;
-  background-image: url("./assets/bg.png");
+  background-image: url('./assets/bg.png');
   background-position: top right;
   background-repeat: no-repeat;
-  background-size: contain;
-}
-
+  background-size: cover;
+  height: 100vh;
+} */
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }

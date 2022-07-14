@@ -6,10 +6,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
+
+## `npx json-graphql-server db.js --p 5000` To start the Graphql mock server
+
+The Graphql mock server will run and opn
+ at [http://localhost:5000](http://localhost:5000) to view the  Graphql mock server playground in the browser.
+### `yarn start` to start the app
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
